@@ -9,18 +9,22 @@ for (let i = 1; i<=100;i++){
     if (i % 15 === 0){
         numberBox.innerHTML= "fizzbuzz";
         numberBox.classList.add("fizzbuzz");
+        numberContainer.append(numberBox);
         console.log("fizzbuzz");
     }else if(i % 3 === 0){
         numberBox.innerHTML= "fizz";
         numberBox.classList.add("fizz");
+        numberContainer.append(numberBox);
         console.log("fizz");
     }else if(i % 5 === 0){
         numberBox.innerHTML= "buzz";
         numberBox.classList.add("buzz");
+        numberContainer.append(numberBox);
         console.log("buzz");
     }else{
         numberBox.innerHTML= i;
         numberBox.classList.remove("fizzbuzz","buzz","fizz");
+        numberContainer.append(numberBox);
         console.log(i);
     } 
 }
